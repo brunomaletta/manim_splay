@@ -333,8 +333,9 @@ class DefaultTemplate(MovingCameraScene):
 
 
 		self.next_section(skip_animations=True)
-		for i in range(100):
-			self.insert_splay(splay, random.randint(0, 999))
+		for i in range(1, 10):
+			self.insert_splay(splay, i)
 		self.next_section()
 
-		self.insert_splay(splay, random.randint(0, 999))
+		#self.insert_splay(splay, random.randint(0, 9))
+		self.insert_splay(splay, 0)
